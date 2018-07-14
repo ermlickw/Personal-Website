@@ -1,6 +1,8 @@
 # Personal-Website
 ## sub heading in markup
-regular text?
+regular text? <br />
+python manage.py runserver <br />
+python mange.py createsuperuser
 ## another subheading
 more text <br />
 go into virtualenv: <br />
