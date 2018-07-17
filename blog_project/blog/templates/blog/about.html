@@ -1,9 +1,18 @@
 {% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block styles %}
+    {# Custom CSS#}
+    <link rel="stylesheet" href="{% static 'css/game.css' %}">
+{% endblock %}
 
 {% block content %}
+
+
 <h1>About me</h1>
 <p>Thanks for visiting my blog! Check all this cool stuff about me!</p>
 <p>I am the best. Here is the game:</p>
+
 
 
 
@@ -86,5 +95,8 @@
     </script>
   </body>
 
+  {# JS SCRIPTS#}
+  <script type="text/javascript" src="{% static 'js/game.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
 
 {% endblock %}
