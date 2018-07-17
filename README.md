@@ -14,3 +14,9 @@ python manage.py make migrations <br />
 python manage.py collectstatic
 ## Fix db breakdown
 python manage.py migrate --run-syncdb <br />
+## set up VE
+mkvirtualenv --python=python3.6 myproj <br />
+pip list <br />
+pip install -U django==2.0.5 <br />
+which django-admin.py
+
