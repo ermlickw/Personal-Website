@@ -10,3 +10,5 @@ cd into manage.py <br />
 python manage.py make migrations <br />
 python manage.py migrate "app" (blog in this case) <br />
 python manage.py make migrations <br />
+<br /><br />
+python manage.py collectstatic
