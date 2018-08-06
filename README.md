@@ -12,8 +12,8 @@ python manage.py migrate "app" (blog in this case) <br />
 python manage.py make migrations <br />
 <br /><br />
 ## set up static files:
-python manage.py collectstatic
- add "?v=00001" to the end of the source to clear cache locally for static files
+python manage.py collectstatic <br />
+add "?v=00001" to the end of the source to clear cache locally for static files
 ## Fix db breakdown
 python manage.py migrate --run-syncdb <br />
 ## set up VE
