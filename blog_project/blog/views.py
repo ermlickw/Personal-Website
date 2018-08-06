@@ -16,3 +16,9 @@ class AboutView(TemplateView):
 
 class HomeView(TemplateView):
     template_name = 'base.html'
+
+class GameView(TemplateView):
+    template_name = 'games.html'
+
+class ProjectsView(TemplateView):
+    template_name = 'projects.html'

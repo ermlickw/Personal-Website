@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block styles %}
+    {# Custom CSS#}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}?v=00001">
+{% endblock %}
+
+{% block content %}
+
+
+<h1>About me</h1>
+<p>Thanks for visiting my blog! Check all this cool stuff about me!</p>
+<p>I am the best. Here is the game:</p>
+<img src="{% static "images/LSATPHOTO.jpg" %}" alt="Uh Oh, didn't show!" style="width:600px;height:600px;">
+{% endblock %}
+
+{% block scipts %}
+{# JS SCRIPTS#}
+<script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
+{% endblock %}

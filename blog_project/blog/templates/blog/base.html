@@ -16,7 +16,7 @@
 
         {% block styles %}
         {# Custom CSS#}
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}?v=00001">
         {% endblock %}
 
 
@@ -36,9 +36,11 @@
 
       <ul class="nav navbar-nav">
         <li><a class='navbar-brand bigbrand' href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'about'%}">About/Games</a></li>
-        <li><a href="https://www.github.com">Github</a></li>
-        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        <li><a href="{% url 'about'%}">About</a></li>
+        <li><a href="{% url 'games'%}">Games</a></li>
+        <li><a href="{% url 'projects'%}">Projects</a></li>
+        <li><a href="https://github.com/ermlickw">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/billyermlick/">LinkedIn</a></li>
 
       </ul>
 
@@ -50,24 +52,23 @@
       </ul>
   </div>
 </nav>
+{% block content %}
+
 
   {# The actual blog posts#}
         <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                  <div class="blog_posts">
-                    {% block content %}
-                    {% endblock %}
-
-                  </div>
-
-                </div>
-            </div>
+            <img src="{% static "images/LSATPHOTO.jpg" %}" alt="Uh Oh, didn't show!" style="width:600px;height:600px;">
         </div>
 
-<!-- {# JS SCRIPTS#} -->
-<!-- <script type="text/javascript" src="{% static 'js/game.js' %}"></script> -->
-<!-- <script type="text/javascript" src="{% static 'js/blog.js' %}"></script> -->
+
+
+
+  {% endblock %}
+        {% block scipts %}
+        {# JS SCRIPTS#}
+        <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
+        {% endblock %}
+
 
 </body>
 </html>
