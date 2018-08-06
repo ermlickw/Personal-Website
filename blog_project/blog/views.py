@@ -20,5 +20,8 @@ class HomeView(TemplateView):
 class GameView(TemplateView):
     template_name = 'games.html'
 
+class ConnectView(TemplateView):
+    template_name = 'connectfour.html'
+
 class ProjectsView(TemplateView):
     template_name = 'projects.html'
