@@ -21,4 +21,4 @@ mkvirtualenv --python=python3.6 myproj <br />
 pip list <br />
 pip install -U django==2.0.5 <br />
 which django-admin.py
-
+https://stackoverflow.com/questions/47057299/create-clean-conda-environment
