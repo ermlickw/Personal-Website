@@ -4,22 +4,16 @@
 {% block styles %}
     {# Custom CSS#}
     <link rel="stylesheet" href="{% static 'css/blog.css' %}?v=00001">
-    <link rel="stylesheet" href="{% static 'css/game.css' %}?v=00001">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}?v=00001">
     <!--  to clear the cache added '?v=00001' -->
 {% endblock %}
 
 {% block content %}
 
-
-<h1>About me</h1>
-<p>Thanks for visiting my blog! Check all this cool stuff about me!</p>
-<p>I am the best.</p>
-
-
-</body>
-
-
-
+<h1>All About Me</h1>
+<h6>This is a map of places I have visited and lived in.</h6>
+<h6>I am the best?</h6>
+<p></p>
 
 
 {% endblock %}
@@ -27,5 +21,12 @@
 
 {% block scipts %}
 {# JS SCRIPTS#}
-<!-- <script type="text/javascript" src="{% static 'js/game.js' %}"></script> -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+  var citieslivedin = "{% static "data/cities-lived.csv" %}"
+  var stateslivedin = "{% static "data/stateslived.csv" %}"
+  var usstates = "{% static "data/us-states.json" %}"
+</script>
+<script type="text/javascript" src="{% static 'js/about.js' %}?v=00001"></script>
+
 {% endblock %}
