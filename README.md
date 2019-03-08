@@ -7,9 +7,9 @@ python mange.py createsuperuser
 more text <br />
 go into virtualenv: <br />
 cd into manage.py <br />
-python manage.py make migrations <br />
-python manage.py migrate "app" (blog in this case) <br />
-python manage.py make migrations <br />
+python manage.py migrate  <br />
+python manage.py makemigrations "app" (blog in this case) <br />
+python manage.py migrate  <br />
 <br /><br />
 ## set up static files:
 python manage.py collectstatic <br />
@@ -21,4 +21,4 @@ mkvirtualenv --python=python3.6 myproj <br />
 pip list <br />
 pip install -U django==2.0.5 <br />
 which django-admin.py
-
+https://stackoverflow.com/questions/47057299/create-clean-conda-environment
