@@ -14,6 +14,9 @@ from django.views.generic import (TemplateView,ListView,
 class AboutView(TemplateView):
     template_name = 'about.html'
 
+class TimelineView(TemplateView):
+    template_name = 'timeline.html'
+
 class HomeView(TemplateView):
     template_name = 'base.html'
 

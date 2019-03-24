@@ -1,0 +1,51 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block styles %}
+    {# Custom CSS#}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}?v=00001">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}?v=00001">
+    <link rel="stylesheet" href="{% static 'css/timeline.css' %}?v=00001">
+    <!--  to clear the cache added '?v=00001' -->
+{% endblock %}
+
+{% block content %}
+
+<h1>All About Me</h1>
+<h6>This is a timeline of things I have done!</h6>
+<h6>I am the best?</h6>
+<li><a href="{% url 'about'%}">Map</a></li>
+<p></p>
+
+<div class="outerwrapper"><!--  timeline!-->
+
+<div class="timeline">
+	<div class="timeline-header">
+		<h3>INTERACTIVE:</h3>
+		<h2><span class="timeline-heading"></span></h2>
+		<p class="timeline-standfirst"></p>
+	</div>
+	<div class="tooltip">
+		<p></p>
+	</div>
+</div> <!-- timeline -->
+
+<div class="info-box">
+	<div class="panel"></div>
+</div>
+
+</div> <!-- outerwrapper -->
+
+
+
+
+{% endblock %}
+
+
+{% block scipts %}
+{# JS SCRIPTS#}
+<script src="http://d3js.org/d3.v3.min.js"></script> <!-- D3 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> <!-- JQUery -->
+<script type="text/javascript" src="{% static 'js/timeline.js' %}?v=00001"></script>
+
+{% endblock %}
