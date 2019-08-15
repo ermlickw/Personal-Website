@@ -13,7 +13,8 @@ python manage.py migrate  <br />
 <br /><br />
 ## set up static files:
 python manage.py collectstatic <br />
-add "?v=00001" to the end of the source to clear cache locally for static files
+add "?v=00001" to the end of the source to clear cache locally for static files <br/>
+ctrl + f5 to bipass cache <br/>
 ## Fix db breakdown
 python manage.py migrate --run-syncdb <br />
 ## set up VE
