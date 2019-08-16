@@ -17,6 +17,9 @@ class AboutView(TemplateView):
 class TimelineView(TemplateView):
     template_name = 'timeline.html'
 
+class FitbitView(TemplateView):
+    template_name = 'fitbit.html'
+
 class HomeView(TemplateView):
     template_name = 'base.html'
 

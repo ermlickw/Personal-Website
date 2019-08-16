@@ -1,0 +1,37 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block styles %}
+    {# Custom CSS#}
+
+    <link rel="stylesheet" href="{% static 'css/timeline.css' %}?v=00001">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}?v=00001">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}?v=00001">
+    <!--  to clear the cache added '?v=00001' -->
+{% endblock %}
+
+
+
+{% block content %}
+
+<h1>All About Me</h1>
+<h6>Fitbit stuff</h6>
+<li><a href="{% url 'about'%}">Map</a></li>
+<li><a href="{% url 'timeline'%}">Timeline</a></li>
+<p></p>
+
+<div id="my_dataviz">where is the graph?</div>
+
+{% endblock %}
+
+
+
+{% block scipts %}
+{# JS SCRIPTS#}
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script>
+  var sleepdata = "{% static "data/SleepData.csv" %}?v=00001"
+</script>
+<script type="text/javascript" src="{% static 'js/fitbit.js' %}?v=00001"></script>
+
+{% endblock %}
